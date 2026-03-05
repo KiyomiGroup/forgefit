@@ -1,0 +1,316 @@
+{
+  "gyms": [
+    {
+      "id": 1,
+      "name": "IronForge Elite",
+      "location": "Lagos Island, Lagos",
+      "address": "15 Marina Road, Lagos Island",
+      "rating": 4.8,
+      "reviews": 312,
+      "price": "₦15,000/mo",
+      "priceRange": "$$",
+      "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=600&q=80",
+      "tags": ["24/7", "Pool", "Sauna"],
+      "description": "Premium fitness facility with world-class equipment and expert trainers.",
+      "phone": "+234 801 234 5678",
+      "hours": "24/7"
+    },
+    {
+      "id": 2,
+      "name": "PowerZone Fitness",
+      "location": "Victoria Island, Lagos",
+      "address": "42 Adeola Odeku Street, VI",
+      "rating": 4.6,
+      "reviews": 198,
+      "price": "₦12,000/mo",
+      "priceRange": "$$",
+      "image": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=600&q=80",
+      "tags": ["CrossFit", "Classes", "Parking"],
+      "description": "High-intensity training hub for serious athletes and beginners alike.",
+      "phone": "+234 802 345 6789",
+      "hours": "5am - 11pm"
+    },
+    {
+      "id": 3,
+      "name": "FitLife Hub",
+      "location": "Ikeja, Lagos",
+      "address": "8 Obafemi Awolowo Way, Ikeja",
+      "rating": 4.4,
+      "reviews": 145,
+      "price": "₦8,000/mo",
+      "priceRange": "$",
+      "image": "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&q=80",
+      "tags": ["Budget", "Cardio", "Weights"],
+      "description": "Affordable fitness for everyone. Great community, great results.",
+      "phone": "+234 803 456 7890",
+      "hours": "6am - 10pm"
+    },
+    {
+      "id": 4,
+      "name": "Apex Performance Center",
+      "location": "Lekki Phase 1, Lagos",
+      "address": "23 Lekki-Epe Expressway, Lekki",
+      "rating": 4.9,
+      "reviews": 421,
+      "price": "₦25,000/mo",
+      "priceRange": "$$$",
+      "image": "https://images.unsplash.com/photo-1593079831268-3381b0db4a77?w=600&q=80",
+      "tags": ["Luxury", "PT", "Spa"],
+      "description": "Where champions are made. Top-tier facilities and elite coaching.",
+      "phone": "+234 804 567 8901",
+      "hours": "5am - 12am"
+    },
+    {
+      "id": 5,
+      "name": "BeastMode Gym",
+      "location": "Surulere, Lagos",
+      "address": "7 Adeniran Ogunsanya, Surulere",
+      "rating": 4.3,
+      "reviews": 89,
+      "price": "₦6,000/mo",
+      "priceRange": "$",
+      "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+      "tags": ["Powerlifting", "Boxing", "24/7"],
+      "description": "Raw, real, results. No fluff, just iron and sweat.",
+      "phone": "+234 805 678 9012",
+      "hours": "24/7"
+    },
+    {
+      "id": 6,
+      "name": "Harmony Wellness Studio",
+      "location": "Ikoyi, Lagos",
+      "address": "11 Bourdillon Road, Ikoyi",
+      "rating": 4.7,
+      "reviews": 234,
+      "price": "₦20,000/mo",
+      "priceRange": "$$$",
+      "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&q=80",
+      "tags": ["Yoga", "Pilates", "Wellness"],
+      "description": "Mind, body, soul transformation. Premium wellness experience.",
+      "phone": "+234 806 789 0123",
+      "hours": "6am - 9pm"
+    }
+  ],
+  "workouts": [
+    {
+      "id": 1,
+      "name": "Barbell Bench Press",
+      "muscle": "Chest",
+      "level": "Intermediate",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
+      "description": "The king of chest exercises. Builds mass and strength across the entire chest.",
+      "form": "Lie flat on bench. Grip bar slightly wider than shoulder-width. Lower to mid-chest. Press explosively upward. Keep feet flat, back slightly arched.",
+      "mistakes": "Flaring elbows too wide, bouncing bar off chest, lifting hips off bench, uneven grip."
+    },
+    {
+      "id": 2,
+      "name": "Pull-Up",
+      "muscle": "Back",
+      "level": "Intermediate",
+      "image": "https://images.unsplash.com/photo-1598266663439-2056e6900339?w=400&q=80",
+      "description": "The ultimate bodyweight back builder. Develops width and thickness simultaneously.",
+      "form": "Hang with arms fully extended. Pull elbows down and back. Chin clears bar. Lower slowly under control. Engage core throughout.",
+      "mistakes": "Kipping/swinging, not fully extending at bottom, shrugging shoulders, incomplete range of motion."
+    },
+    {
+      "id": 3,
+      "name": "Barbell Squat",
+      "muscle": "Legs",
+      "level": "Advanced",
+      "image": "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=400&q=80",
+      "description": "The master movement. Builds legs, glutes, and core while boosting testosterone.",
+      "form": "Bar on upper traps. Feet shoulder-width, toes slightly out. Squat until parallel or below. Drive through heels to stand. Keep chest up, knees tracking toes.",
+      "mistakes": "Knee cave, heels rising, rounding lower back, not reaching depth, forward lean."
+    },
+    {
+      "id": 4,
+      "name": "Overhead Press",
+      "muscle": "Shoulders",
+      "level": "Intermediate",
+      "image": "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=400&q=80",
+      "description": "The definitive shoulder builder. Develops all three deltoid heads and core stability.",
+      "form": "Bar at collar bone. Hands just outside shoulders. Press overhead to lockout. Slightly lean back at top. Lower to chin level. Brace core hard.",
+      "mistakes": "Excessive back arch, flaring elbows, pressing in front of body, losing core tension."
+    },
+    {
+      "id": 5,
+      "name": "Barbell Curl",
+      "muscle": "Arms",
+      "level": "Beginner",
+      "image": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?w=400&q=80",
+      "description": "Classic bicep builder. Isolates the biceps for maximum peak and size.",
+      "form": "Stand with barbell, underhand grip. Keep elbows at sides. Curl to shoulder height. Squeeze at top. Lower slowly. No swinging.",
+      "mistakes": "Swinging torso, elbows drifting forward, partial reps, using too much weight."
+    },
+    {
+      "id": 6,
+      "name": "Plank",
+      "muscle": "Core",
+      "level": "Beginner",
+      "image": "https://images.unsplash.com/photo-1566241142559-40e1dab266c6?w=400&q=80",
+      "description": "The foundation of core strength. Builds endurance and stability for all lifts.",
+      "form": "Forearms on ground, elbows under shoulders. Body straight from head to heels. Squeeze glutes and abs. Neutral spine. Look at floor.",
+      "mistakes": "Hips too high or low, holding breath, sagging midsection, shrugging shoulders."
+    },
+    {
+      "id": 7,
+      "name": "Dumbbell Fly",
+      "muscle": "Chest",
+      "level": "Beginner",
+      "image": "https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?w=400&q=80",
+      "description": "Stretches and isolates the chest for full muscle development and definition.",
+      "form": "Lie on bench with dumbbells above chest. Arms slightly bent. Lower in wide arc. Squeeze chest to bring weights back up. Feel the stretch.",
+      "mistakes": "Arms too straight (injury risk), going too heavy, not feeling the stretch, incomplete range."
+    },
+    {
+      "id": 8,
+      "name": "Deadlift",
+      "muscle": "Back",
+      "level": "Advanced",
+      "image": "https://images.unsplash.com/photo-1603287681836-b174ce5074c2?w=400&q=80",
+      "description": "The ultimate full-body movement. Builds raw power, mass, and functional strength.",
+      "form": "Bar over mid-foot. Hip-width stance. Grip just outside legs. Push floor away. Bar stays close to body. Lockout hips and knees simultaneously.",
+      "mistakes": "Bar drifting forward, rounding lower back, jerking the bar, hyperextending at lockout."
+    },
+    {
+      "id": 9,
+      "name": "Leg Press",
+      "muscle": "Legs",
+      "level": "Beginner",
+      "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=400&q=80",
+      "description": "Machine-based quad and glute builder. Great for adding volume safely.",
+      "form": "Feet shoulder-width on platform. Lower until 90-degree knee angle. Press through full sole of foot. Do not lock knees at top. Control descent.",
+      "mistakes": "Knees caving in, locking knees, feet too low (knee strain), rounding lower back."
+    }
+  ],
+  "equipment": [
+    {
+      "id": 1,
+      "name": "Treadmill",
+      "category": "Cardio",
+      "muscles": "Legs, Cardiovascular System",
+      "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=400&q=80",
+      "howToUse": "Step on belt, start at slow pace, gradually increase speed/incline. Maintain upright posture, swing arms naturally. Use safety clip at all times.",
+      "safetyTips": "Always clip the safety key to your clothing. Start slow to warm up. Don't look down while running. Step to side rails when stopping."
+    },
+    {
+      "id": 2,
+      "name": "Barbell Bench",
+      "category": "Strength",
+      "muscles": "Chest, Triceps, Shoulders",
+      "image": "https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?w=400&q=80",
+      "howToUse": "Set J-hooks at proper height. Lie flat, eyes under bar. Unrack with arms locked. Lower to mid-chest, press explosively. Re-rack when done.",
+      "safetyTips": "Always use a spotter for heavy sets. Use collars to secure plates. Keep feet flat on floor. Never attempt a 1RM alone."
+    },
+    {
+      "id": 3,
+      "name": "Squat Rack",
+      "category": "Strength",
+      "muscles": "Quads, Glutes, Hamstrings, Core",
+      "image": "https://images.unsplash.com/photo-1567013127542-490d757e51fc?w=400&q=80",
+      "howToUse": "Set safety bars at hip height. Position bar on upper traps. Unrack, step back two steps. Squat, rack when done. Never step forward to rack.",
+      "safetyTips": "Set safety bars correctly before every set. Use a spotter. Learn to bail safely with safety bars. Warm up thoroughly before heavy loads."
+    },
+    {
+      "id": 4,
+      "name": "Lat Pulldown",
+      "category": "Strength",
+      "muscles": "Lats, Biceps, Rear Delts",
+      "image": "https://images.unsplash.com/photo-1530822847156-5df684ec5933?w=400&q=80",
+      "howToUse": "Adjust thigh pads to secure legs. Overhand grip slightly wider than shoulders. Pull bar to upper chest. Lean back slightly. Control the weight up.",
+      "safetyTips": "Don't swing excessively. Avoid pulling behind the neck. Keep core tight. Use appropriate weight — you should be able to control the negative."
+    },
+    {
+      "id": 5,
+      "name": "Dumbbells",
+      "category": "Free Weights",
+      "muscles": "All Muscle Groups",
+      "image": "https://images.unsplash.com/photo-1585152968104-d07e23be8d8b?w=400&q=80",
+      "howToUse": "Select appropriate weight. Keep back neutral on all exercises. Use full range of motion. Return to rack after use — heaviest weights on lowest pegs.",
+      "safetyTips": "Use collars if using adjustable dumbbells. Don't drop weights unnecessarily. Keep clear of feet. Use gym chalk for heavy sets."
+    },
+    {
+      "id": 6,
+      "name": "Leg Press Machine",
+      "category": "Strength",
+      "muscles": "Quads, Glutes, Hamstrings",
+      "image": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=400&q=80",
+      "howToUse": "Sit with back flat against pad. Place feet shoulder-width on platform. Release safety handles. Lower slowly, press back up. Re-engage safety before exiting.",
+      "safetyTips": "Never fully lock out knees. Keep back against pad throughout. Always use safety handles. Don't place hands on knees during movement."
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "ProLift Compression Shorts",
+      "category": "Clothing",
+      "price": 4500,
+      "seller": "SportsTech NG",
+      "image": "https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=400&q=80",
+      "description": "High-performance compression shorts with moisture-wicking technology."
+    },
+    {
+      "id": 2,
+      "name": "Whey Protein 2kg - Chocolate",
+      "category": "Supplements",
+      "price": 18000,
+      "seller": "NutriMax Store",
+      "image": "https://images.unsplash.com/photo-1593095948071-474c5cc2989d?w=400&q=80",
+      "description": "Premium whey protein isolate. 25g protein per serving. Zero added sugar."
+    },
+    {
+      "id": 3,
+      "name": "Adjustable Resistance Bands Set",
+      "category": "Accessories",
+      "price": 3200,
+      "seller": "FitGear Lagos",
+      "image": "https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=400&q=80",
+      "description": "5-band set from 5-150lbs resistance. Includes handles, ankle straps, and door anchor."
+    },
+    {
+      "id": 4,
+      "name": "Training Gloves Pro",
+      "category": "Accessories",
+      "price": 2800,
+      "seller": "IronGrip NG",
+      "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&q=80",
+      "description": "Full-palm protection gloves with wrist support for heavy lifting sessions."
+    },
+    {
+      "id": 5,
+      "name": "BCAAs 300g - Watermelon",
+      "category": "Supplements",
+      "price": 8500,
+      "seller": "NutriMax Store",
+      "image": "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80",
+      "description": "2:1:1 BCAA ratio. Supports muscle recovery and reduces soreness. Delicious flavor."
+    },
+    {
+      "id": 6,
+      "name": "Gym Duffel Bag XL",
+      "category": "Accessories",
+      "price": 6500,
+      "seller": "FitGear Lagos",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80",
+      "description": "50L capacity gym bag with wet/dry compartment, shoe pocket, and laptop sleeve."
+    },
+    {
+      "id": 7,
+      "name": "Dry-Fit Training T-Shirt",
+      "category": "Clothing",
+      "price": 3500,
+      "seller": "SportsTech NG",
+      "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&q=80",
+      "description": "Lightweight, breathable fabric. 4-way stretch for maximum mobility."
+    },
+    {
+      "id": 8,
+      "name": "Digital Food Scale 5kg",
+      "category": "Accessories",
+      "price": 4200,
+      "seller": "FitGear Lagos",
+      "image": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=400&q=80",
+      "description": "Precision food scale for accurate macro tracking. Tare function included."
+    }
+  ]
+}

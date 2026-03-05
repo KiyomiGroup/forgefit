@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workout Library — ForgeFit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23e8ff3c'/><text x='16' y='22' text-anchor='middle' font-size='18'>⚡</text></svg>">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">⚡</div>
+      <span class="nav-logo-text">FORGE<span>FIT</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="gyms.html" class="nav-link">Find Gyms</a></li>
+      <li><a href="workout-library.html" class="nav-link active">Workouts</a></li>
+      <li><a href="equipment-guide.html" class="nav-link">Equipment</a></li>
+      <li><a href="diet-tracker.html" class="nav-link">Diet Tracker</a></li>
+      <li><a href="marketplace.html" class="nav-link">Shop</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="gym-register.html" class="btn btn-outline btn-sm">List Your Gym</a>
+      <a href="marketplace.html" class="btn btn-primary btn-sm cart-badge">🛒 Cart<span class="cart-badge-count" style="display:none">0</span></a>
+    </div>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="nav-mobile-menu">
+  <a href="index.html" class="nav-mobile-link">Home</a>
+  <a href="gyms.html" class="nav-mobile-link">Find Gyms</a>
+  <a href="workout-library.html" class="nav-mobile-link">Workouts</a>
+  <a href="equipment-guide.html" class="nav-mobile-link">Equipment Guide</a>
+  <a href="diet-tracker.html" class="nav-mobile-link">Diet Tracker</a>
+  <a href="marketplace.html" class="nav-mobile-link">Marketplace</a>
+  <a href="gym-register.html" class="nav-mobile-link">Register Gym</a>
+</div>
+
+<div class="page-content">
+  <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:3rem 0 2rem">
+    <div class="container">
+      <span class="section-label">Exercise Database</span>
+      <h1 style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);line-height:0.95;">WORKOUT<br><span style="color:var(--accent)">LIBRARY</span></h1>
+      <p style="color:var(--text-secondary);margin-top:0.75rem;max-width:560px;">Master every movement with detailed form guides, muscle targets, and common mistake breakdowns. Click any exercise to expand.</p>
+    </div>
+  </div>
+
+  <!-- Sticky filter bar -->
+  <div style="border-bottom:1px solid var(--border);padding:1.25rem 0;background:var(--bg-primary);position:sticky;top:var(--nav-height);z-index:100;backdrop-filter:blur(20px);">
+    <div class="container">
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
+        <div class="search-input-wrap" style="width:240px;">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="search-input" id="workoutSearch" placeholder="Search exercises...">
+        </div>
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-muscle="all">All</button>
+          <button class="filter-tab" data-muscle="Chest">Chest</button>
+          <button class="filter-tab" data-muscle="Back">Back</button>
+          <button class="filter-tab" data-muscle="Legs">Legs</button>
+          <button class="filter-tab" data-muscle="Shoulders">Shoulders</button>
+          <button class="filter-tab" data-muscle="Arms">Arms</button>
+          <button class="filter-tab" data-muscle="Core">Core</button>
+        </div>
+        <span class="results-count" id="workoutCount"></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="alert alert-info" style="margin-bottom:2rem">
+        <span>💡</span>
+        <span><strong>Pro tip:</strong> Click any exercise card to expand and see perfect form instructions and common mistakes to avoid.</span>
+      </div>
+      <div id="workoutsGrid" class="grid-3">
+        <div class="loading-spinner" style="grid-column:1/-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Muscles Anatomy Quick Ref -->
+  <section style="background:var(--bg-secondary);border-top:1px solid var(--border);padding:3rem 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Quick Reference</span>
+        <h2 class="section-title">Muscle Groups</h2>
+      </div>
+      <div class="grid-3 stagger">
+        <div class="card" style="padding:1.5rem;">
+          <div style="font-size:2rem;margin-bottom:0.75rem">🔵</div>
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:0.5rem">PUSH MUSCLES</h3>
+          <p style="font-size:0.875rem;color:var(--text-secondary)">Chest, Shoulders, Triceps — muscles used in pushing movements</p>
+        </div>
+        <div class="card" style="padding:1.5rem;">
+          <div style="font-size:2rem;margin-bottom:0.75rem">🔴</div>
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:0.5rem">PULL MUSCLES</h3>
+          <p style="font-size:0.875rem;color:var(--text-secondary)">Back, Biceps, Rear Delts — muscles used in pulling movements</p>
+        </div>
+        <div class="card" style="padding:1.5rem;">
+          <div style="font-size:2rem;margin-bottom:0.75rem">🟡</div>
+          <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:0.5rem">LEG MUSCLES</h3>
+          <p style="font-size:0.875rem;color:var(--text-secondary)">Quads, Hamstrings, Glutes, Calves — lower body powerhouses</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <p class="footer-copy">© 2024 <span>ForgeFit</span>. All rights reserved.</p>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="equipment-guide.html" class="footer-link">Equipment Guide</a>
+        <a href="diet-tracker.html" class="footer-link">Diet Tracker</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

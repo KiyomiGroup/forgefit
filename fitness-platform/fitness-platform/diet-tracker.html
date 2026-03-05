@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet Tracker & Fitness Planner — ForgeFit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23e8ff3c'/><text x='16' y='22' text-anchor='middle' font-size='18'>⚡</text></svg>">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">⚡</div>
+      <span class="nav-logo-text">FORGE<span>FIT</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="gyms.html" class="nav-link">Find Gyms</a></li>
+      <li><a href="workout-library.html" class="nav-link">Workouts</a></li>
+      <li><a href="equipment-guide.html" class="nav-link">Equipment</a></li>
+      <li><a href="diet-tracker.html" class="nav-link active">Diet Tracker</a></li>
+      <li><a href="marketplace.html" class="nav-link">Shop</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="gym-register.html" class="btn btn-outline btn-sm">List Your Gym</a>
+      <a href="marketplace.html" class="btn btn-primary btn-sm cart-badge">🛒 Cart<span class="cart-badge-count" style="display:none">0</span></a>
+    </div>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="nav-mobile-menu">
+  <a href="index.html" class="nav-mobile-link">Home</a>
+  <a href="gyms.html" class="nav-mobile-link">Find Gyms</a>
+  <a href="workout-library.html" class="nav-mobile-link">Workouts</a>
+  <a href="equipment-guide.html" class="nav-mobile-link">Equipment Guide</a>
+  <a href="diet-tracker.html" class="nav-mobile-link">Diet Tracker</a>
+  <a href="marketplace.html" class="nav-mobile-link">Marketplace</a>
+</div>
+
+<div class="page-content">
+  <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:3rem 0 2rem">
+    <div class="container">
+      <span class="section-label">Nutrition & Body Goals</span>
+      <h1 style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);line-height:0.95;">DIET TRACKER<br>& <span style="color:var(--accent)">PLANNER</span></h1>
+      <p style="color:var(--text-secondary);margin-top:0.75rem;max-width:560px;">Calculate your personalized macros, set your fitness goals, and log every meal to stay on track. Powered by science.</p>
+    </div>
+  </div>
+
+  <section class="section-sm">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1.5fr;gap:2rem;align-items:start;">
+
+        <!-- CALCULATOR FORM -->
+        <div>
+          <div class="form-card">
+            <h2 class="form-title">⚡ Body Goal Calculator</h2>
+            <form id="dietForm">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label">Weight (kg)</label>
+                  <input type="number" class="form-control" name="weight" id="dietWeight" placeholder="e.g. 80" min="30" max="300" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Height (cm)</label>
+                  <input type="number" class="form-control" name="height" id="dietHeight" placeholder="e.g. 175" min="100" max="250" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Age</label>
+                  <input type="number" class="form-control" name="age" id="dietAge" placeholder="e.g. 25" min="13" max="100" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Gender</label>
+                  <select class="form-control" name="gender" id="dietGender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Fitness Goal</label>
+                <select class="form-control" name="goal" id="dietGoal">
+                  <option value="lose">🔥 Lose Weight / Cut</option>
+                  <option value="build">💪 Build Muscle / Bulk</option>
+                  <option value="maintain">⚖️ Maintain Weight</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Activity Level</label>
+                <select class="form-control" name="activity" id="dietActivity">
+                  <option value="1.2">Sedentary (desk job, no exercise)</option>
+                  <option value="1.375">Light (1-3 days/week)</option>
+                  <option value="1.55" selected>Moderate (3-5 days/week)</option>
+                  <option value="1.725">Active (6-7 days/week)</option>
+                  <option value="1.9">Very Active (twice a day)</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full btn-lg">Calculate My Plan ⚡</button>
+            </form>
+          </div>
+
+          <!-- Nutrition Tips -->
+          <div style="margin-top:1.5rem;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;">
+            <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:1rem;color:var(--accent)">NUTRITION RULES</h3>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+              <div style="display:flex;gap:0.75rem;font-size:0.875rem;color:var(--text-secondary)"><span>💧</span><span>Drink at least 3L of water daily</span></div>
+              <div style="display:flex;gap:0.75rem;font-size:0.875rem;color:var(--text-secondary)"><span>🥩</span><span>Prioritize protein in every meal</span></div>
+              <div style="display:flex;gap:0.75rem;font-size:0.875rem;color:var(--text-secondary)"><span>🌙</span><span>Don't skip breakfast or post-workout meal</span></div>
+              <div style="display:flex;gap:0.75rem;font-size:0.875rem;color:var(--text-secondary)"><span>📊</span><span>Consistency beats perfection every time</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESULTS + FOOD LOG -->
+        <div>
+          <!-- RESULTS DASHBOARD -->
+          <div id="dietResults" class="results-dashboard">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.5rem;">
+              <h2 style="font-family:var(--font-display);font-size:1.8rem;">YOUR PLAN</h2>
+              <span id="resultGoalLabel" style="font-size:0.8rem;background:var(--accent-glow);color:var(--accent);border:1px solid rgba(232,255,60,0.2);border-radius:20px;padding:4px 12px;font-weight:700;"></span>
+            </div>
+
+            <!-- Key stats -->
+            <div class="results-grid">
+              <div class="result-stat">
+                <div class="result-stat-value" id="resultCals">—</div>
+                <div class="result-stat-unit">kcal/day</div>
+                <div class="result-stat-label">Daily Calories</div>
+              </div>
+              <div class="result-stat">
+                <div class="result-stat-value" id="resultProtein">—</div>
+                <div class="result-stat-unit">per day</div>
+                <div class="result-stat-label">Protein Target</div>
+              </div>
+              <div class="result-stat">
+                <div class="result-stat-value" id="resultCarbs">—</div>
+                <div class="result-stat-unit">per day</div>
+                <div class="result-stat-label">Carbohydrates</div>
+              </div>
+              <div class="result-stat">
+                <div class="result-stat-value" id="resultFat">—</div>
+                <div class="result-stat-unit">per day</div>
+                <div class="result-stat-label">Healthy Fats</div>
+              </div>
+              <div class="result-stat">
+                <div class="result-stat-value" id="resultBMI">—</div>
+                <div class="result-stat-unit" id="resultBMILabel">BMI</div>
+                <div class="result-stat-label">BMI Status</div>
+              </div>
+            </div>
+
+            <!-- Macro breakdown bars -->
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1.5rem;">
+              <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:1.25rem;">MACRO BREAKDOWN</h3>
+              <div class="macro-bar-section">
+                <div class="macro-bar-label">
+                  <span id="barProteinLabel">Protein</span>
+                  <span style="color:var(--accent)">▌ Protein</span>
+                </div>
+                <div class="macro-bar-track"><div class="macro-bar-fill protein" id="proteinBar" style="width:0%"></div></div>
+              </div>
+              <div class="macro-bar-section" style="margin-top:0.75rem;">
+                <div class="macro-bar-label">
+                  <span id="barCarbsLabel">Carbs</span>
+                  <span style="color:var(--accent-blue)">▌ Carbs</span>
+                </div>
+                <div class="macro-bar-track"><div class="macro-bar-fill carbs" id="carbsBar" style="width:0%"></div></div>
+              </div>
+              <div class="macro-bar-section" style="margin-top:0.75rem;">
+                <div class="macro-bar-label">
+                  <span id="barFatLabel">Fats</span>
+                  <span style="color:#ff8c3c">▌ Fats</span>
+                </div>
+                <div class="macro-bar-track"><div class="macro-bar-fill fat" id="fatBar" style="width:0%"></div></div>
+              </div>
+            </div>
+
+            <!-- Workout recommendation -->
+            <div style="background:var(--accent-glow);border:1px solid rgba(232,255,60,0.2);border-radius:var(--radius-md);padding:1.25rem;margin-bottom:1.5rem;">
+              <div style="font-size:0.72rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);margin-bottom:0.5rem;">Workout Recommendation</div>
+              <p id="workoutRec" style="font-size:0.9rem;color:var(--text-secondary);line-height:1.5;"></p>
+              <a href="workout-library.html" style="display:inline-block;margin-top:0.75rem;font-size:0.82rem;color:var(--accent);font-weight:600;">Explore Workouts →</a>
+            </div>
+          </div>
+
+          <!-- FOOD LOG -->
+          <div class="food-log-section">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;">
+              <h2 class="food-log-title">🍽️ Today's Food Log</h2>
+              <span id="caloriesRemaining" style="font-size:0.85rem;color:var(--accent);">Calculate plan first</span>
+            </div>
+
+            <!-- Add food form -->
+            <div class="food-log-add">
+              <p style="font-size:0.8rem;font-weight:600;color:var(--text-secondary);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:0.85rem;">Add Meal / Food Item</p>
+              <div class="food-log-inputs">
+                <div class="form-group" style="margin:0">
+                  <input type="text" class="form-control" id="foodName" placeholder="Food name (e.g. Rice & Chicken)">
+                </div>
+                <div class="form-group" style="margin:0">
+                  <input type="number" class="form-control" id="foodCals" placeholder="Calories" min="0">
+                </div>
+                <div class="form-group" style="margin:0">
+                  <input type="number" class="form-control" id="foodProtein" placeholder="Protein (g)" min="0">
+                </div>
+                <button class="btn btn-primary" id="addFoodBtn">+ Add</button>
+              </div>
+            </div>
+
+            <!-- Food log list -->
+            <div id="foodLogList" class="food-log-list"></div>
+
+            <!-- Daily total -->
+            <div class="food-log-summary">
+              <span class="food-log-total-label">Today's Total</span>
+              <div style="display:flex;gap:2rem;align-items:center;">
+                <div>
+                  <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em">Calories</div>
+                  <div class="food-log-total-value" id="totalCals">0 kcal</div>
+                </div>
+                <div>
+                  <div style="font-size:0.72rem;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.08em">Protein</div>
+                  <div class="food-log-total-value" id="totalProtein" style="color:var(--text-secondary);font-size:1.1rem">0g</div>
+                </div>
+                <button class="btn btn-outline btn-sm" onclick="if(confirm('Clear food log?')){APP.foodLog=[];saveFoodLog();renderFoodLog();}">Clear</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <p class="footer-copy">© 2024 <span>ForgeFit</span>. All rights reserved.</p>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="workout-library.html" class="footer-link">Workouts</a>
+        <a href="marketplace.html" class="footer-link">Shop Supplements</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<!-- Expose storage helpers for inline onclick -->
+<script>
+  function saveFoodLog() { localStorage.setItem('forge_foodlog', JSON.stringify(APP.foodLog)); }
+</script>
+</body>
+</html>

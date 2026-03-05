@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Registration — ForgeFit</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23e8ff3c'/><text x='16' y='22' text-anchor='middle' font-size='18'>⚡</text></svg>">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">⚡</div>
+      <span class="nav-logo-text">FORGE<span>FIT</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="gyms.html" class="nav-link">Find Gyms</a></li>
+      <li><a href="workout-library.html" class="nav-link">Workouts</a></li>
+      <li><a href="equipment-guide.html" class="nav-link">Equipment</a></li>
+      <li><a href="diet-tracker.html" class="nav-link">Diet Tracker</a></li>
+      <li><a href="marketplace.html" class="nav-link">Shop</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="marketplace.html" class="btn btn-outline btn-sm">Marketplace</a>
+      <a href="seller-register.html" class="btn btn-primary btn-sm">Sell Products</a>
+    </div>
+    <div class="nav-hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<div class="nav-mobile-menu">
+  <a href="index.html" class="nav-mobile-link">Home</a>
+  <a href="gyms.html" class="nav-mobile-link">Find Gyms</a>
+  <a href="workout-library.html" class="nav-mobile-link">Workouts</a>
+  <a href="equipment-guide.html" class="nav-mobile-link">Equipment Guide</a>
+  <a href="diet-tracker.html" class="nav-mobile-link">Diet Tracker</a>
+  <a href="marketplace.html" class="nav-mobile-link">Marketplace</a>
+  <a href="gym-register.html" class="nav-mobile-link">Register Gym</a>
+</div>
+
+<div class="page-content">
+  <div style="background:var(--bg-secondary);border-bottom:1px solid var(--border);padding:3rem 0 2rem">
+    <div class="container">
+      <span class="section-label">Seller Portal</span>
+      <h1 style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);line-height:0.95;">SELL ON<br><span style="color:var(--accent)">FORGEFIT</span></h1>
+      <p style="color:var(--text-secondary);margin-top:0.75rem;max-width:560px;">List your fitness products and reach thousands of active buyers across Nigeria. From supplements to gym wear — sell it all here.</p>
+    </div>
+  </div>
+
+  <section class="section-sm">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;">
+
+        <!-- Product Form -->
+        <div>
+          <div class="form-card">
+            <h2 class="form-title">List a Product</h2>
+            <form id="sellerRegisterForm">
+              <div class="form-group">
+                <label class="form-label">Seller / Store Name *</label>
+                <input type="text" class="form-control" name="sellerName" placeholder="e.g. NutriMax Store" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Product Name *</label>
+                <input type="text" class="form-control" name="productName" placeholder="e.g. Whey Protein 2kg - Chocolate" required>
+              </div>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label">Category</label>
+                  <select class="form-control" name="productCategory">
+                    <option value="Supplements">Supplements</option>
+                    <option value="Clothing">Clothing</option>
+                    <option value="Accessories">Accessories</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Price (₦) *</label>
+                  <input type="number" class="form-control" name="productPrice" placeholder="e.g. 18000" min="100" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Product Description</label>
+                <textarea class="form-control" name="productDescription" placeholder="Describe your product — key benefits, ingredients, specs..."></textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Stock Quantity</label>
+                <input type="number" class="form-control" name="productStock" placeholder="e.g. 50" min="1">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Contact Email *</label>
+                <input type="email" class="form-control" name="sellerEmail" placeholder="seller@email.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">WhatsApp / Phone</label>
+                <input type="tel" class="form-control" name="sellerPhone" placeholder="+234 801 234 5678">
+              </div>
+
+              <div class="alert alert-info" style="margin-bottom:1.25rem">
+                <span>📸</span>
+                <span>Product images can be added after listing. Your product will appear in the marketplace immediately.</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full btn-lg">List Product for Free ⚡</button>
+              <p style="text-align:center;font-size:0.78rem;color:var(--text-muted);margin-top:0.75rem">Visible in marketplace immediately</p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Side: Benefits + Preview -->
+        <div>
+          <h2 style="font-family:var(--font-display);font-size:2rem;margin-bottom:1.5rem;">SELLER BENEFITS</h2>
+          <div style="display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem;">
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem;display:flex;gap:1rem;align-items:center;">
+              <span style="font-size:1.5rem">🏪</span>
+              <div>
+                <h4 style="font-family:var(--font-display);font-size:0.95rem;margin-bottom:0.2rem">FREE STORE SETUP</h4>
+                <p style="font-size:0.82rem;color:var(--text-secondary)">Create your seller profile and list unlimited products at no cost</p>
+              </div>
+            </div>
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem;display:flex;gap:1rem;align-items:center;">
+              <span style="font-size:1.5rem">💳</span>
+              <div>
+                <h4 style="font-family:var(--font-display);font-size:0.95rem;margin-bottom:0.2rem">SECURE PAYMENTS</h4>
+                <p style="font-size:0.82rem;color:var(--text-secondary)">Direct bank transfers with buyer protection for both parties</p>
+              </div>
+            </div>
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem;display:flex;gap:1rem;align-items:center;">
+              <span style="font-size:1.5rem">📊</span>
+              <div>
+                <h4 style="font-family:var(--font-display);font-size:0.95rem;margin-bottom:0.2rem">SALES ANALYTICS</h4>
+                <p style="font-size:0.82rem;color:var(--text-secondary)">Track views, conversions, and revenue from your seller dashboard</p>
+              </div>
+            </div>
+            <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.25rem;display:flex;gap:1rem;align-items:center;">
+              <span style="font-size:1.5rem">🚚</span>
+              <div>
+                <h4 style="font-family:var(--font-display);font-size:0.95rem;margin-bottom:0.2rem">DELIVERY SUPPORT</h4>
+                <p style="font-size:0.82rem;color:var(--text-secondary)">Integration with GIG Logistics and other delivery partners in Nigeria</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Commission table -->
+          <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem;">
+            <h3 style="font-family:var(--font-display);font-size:1.1rem;margin-bottom:1rem;">COMMISSION STRUCTURE</h3>
+            <div style="display:flex;flex-direction:column;gap:0.75rem;">
+              <div style="display:flex;justify-content:space-between;padding:0.6rem 0;border-bottom:1px solid var(--border);font-size:0.875rem;">
+                <span style="color:var(--text-secondary)">Supplements</span>
+                <span style="color:var(--accent);font-weight:700">5% per sale</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:0.6rem 0;border-bottom:1px solid var(--border);font-size:0.875rem;">
+                <span style="color:var(--text-secondary)">Clothing</span>
+                <span style="color:var(--accent);font-weight:700">7% per sale</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:0.6rem 0;font-size:0.875rem;">
+                <span style="color:var(--text-secondary)">Accessories</span>
+                <span style="color:var(--accent);font-weight:700">5% per sale</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preview -->
+          <div id="productPreview" style="display:none;margin-top:2rem;"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0">
+      <p class="footer-copy">© 2024 <span>ForgeFit</span>. All rights reserved.</p>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="marketplace.html" class="footer-link">Marketplace</a>
+        <a href="gym-register.html" class="footer-link">Register Gym</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
